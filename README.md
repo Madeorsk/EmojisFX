@@ -1,3 +1,3 @@
 # EmojisFX
 
-Emojis library for JavaFX.
+Beautiful emojis support for JavaFX.
