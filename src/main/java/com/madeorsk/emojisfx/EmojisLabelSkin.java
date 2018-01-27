@@ -500,8 +500,6 @@ public class EmojisLabelSkin extends BehaviorSkinBase<EmojisLabel, EmojisLabelBe
       boolean forceText = false;
       for (byte[] charByteArray : word)
       {
-				/*if (charByteArrayToUnicode(charByteArray).equals("FE0E") || charByteArrayToUnicode(charByteArray).equals("FE0F"))
-					continue;*/
         line.autosize();
         usedWidth = line.getBoundsInParent().getWidth();
         InputStream is = this.getClass().getResourceAsStream(this.getSkinnable().getEmojisLocation() + charByteArrayToUnicode(charByteArray) + ".SVG");

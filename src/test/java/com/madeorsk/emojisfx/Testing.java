@@ -26,7 +26,7 @@ public class Testing extends Application
 		box.prefWidthProperty().bind(root.widthProperty());
 		root.getChildren().add(box);
 		
-		String testedString = new String("Test\nwrap multi ligne. 🙃☺️💞⛔️❤️📷🏓🙊😍😂😂".getBytes(), "UTF-8");
+		String testedString = new String("Test\nmulti line wrap. 🙃☺️💞⛔️❤️📷🏓🙊😍😂😂".getBytes(), "UTF-8");
 		
 		EmojisLabel emojisLabel = new EmojisLabel(testedString);
 		emojisLabel.setPrefWidth(400);
@@ -43,7 +43,7 @@ public class Testing extends Application
 		}));
 		box.getChildren().add(emojisLabel);
 		
-		Scene scene = new Scene(root, 800, 600);
+		Scene scene = new Scene(root, 640, 480);
 		stage.setScene(scene);
 		
 		root.prefHeightProperty().bind(scene.heightProperty());

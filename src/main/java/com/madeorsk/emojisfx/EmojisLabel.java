@@ -15,6 +15,8 @@ import javafx.beans.property.DoubleProperty;
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.beans.value.WritableValue;
 import javafx.css.CssMetaData;
 import javafx.css.FontCssMetaData;
@@ -40,6 +42,9 @@ public class EmojisLabel extends Control
   public EmojisLabel()
   {
     this.getStyleClass().add("emojis-label");
+    this.textProperty().addListener((ObservableValue<? extends String> observable, String oldValue, String newValue) -> {
+      EmojisLabel.this.requestLayout();
+    });
   }
 
   public EmojisLabel(String text)
