@@ -2,7 +2,7 @@
 
 Beautiful emojis support for JavaFX 8.
 
-Default emojis: EmojiOne 2.2.7.
+Default emojis: [EmojiOne 2.2.7](https://github.com/emojione/emojione/tree/2.2.7).
 
 ## TODO
 
@@ -11,7 +11,7 @@ Default emojis: EmojiOne 2.2.7.
 
 ## How to use
 
-Full example: com.madeorsk.emojisfx.examples.SimpleExample
+Full example: [com.madeorsk.emojisfx.examples.SimpleExample](https://github.com/Madeorsk/EmojisFX/blob/master/src/test/java/com/madeorsk/emojisfx/examples/SimpleExample.java)
 
 ### Classic label
 
@@ -50,4 +50,4 @@ linkedLabel.addLinkRange(new Range(24, 40, () -> { /* Link action. */ }));
 root.getChildren().add(linkedLabel);
 ```
 
-You can use com.madeorsk.emojisfx.Testing as another example.
+You can use [com.madeorsk.emojisfx.Testing](https://github.com/Madeorsk/EmojisFX/blob/master/src/test/java/com/madeorsk/emojisfx/Testing.java) as another example.
