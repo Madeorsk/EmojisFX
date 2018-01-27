@@ -2,6 +2,8 @@
 
 Beautiful emojis support for JavaFX 8.
 
+![Simple example](./example.png)
+
 Default emojis: [EmojiOne 2.2.7](https://github.com/emojione/emojione/tree/2.2.7).
 
 ## TODO
