@@ -17,8 +17,9 @@ import javafx.scene.image.ImageView;
 import javafx.scene.image.WritableImage;
 import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.*;
-import javafx.scene.paint.Color;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.StackPane;
+import javafx.scene.layout.VBox;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
@@ -145,7 +146,7 @@ public class EmojisLabelSkin extends BehaviorSkinBase<EmojisLabel, EmojisLabelBe
   }
 
   public void evaluateSelection(Node originNode, int originNodeNumber, HBox originLine, int originLineNumber, Node currentNode, int currentNodeNumber, HBox currentLine, int currentLineNumber, int clickCount)
-  {//System.out.println(originLineNumber + ";" + originNodeNumber + " - " + currentLineNumber + ";" + currentNodeNumber);
+  {
     this.clearSelectionGraphics();
     if (originLine.equals(currentLine) && clickCount != 3)
     {
@@ -491,7 +492,6 @@ public class EmojisLabelSkin extends BehaviorSkinBase<EmojisLabel, EmojisLabelBe
     {
       double currentWordWidth = this.calculateWordWidth(word);
 
-      //System.out.println("!(" + currentWordWidth + " > " + contentWidth + " || (" + usedWidth + " + " + currentWordWidth + ") < " + contentWidth + ")");
       line.autosize();
       usedWidth = line.getBoundsInParent().getWidth();
       if (!(currentWordWidth > contentWidth || (usedWidth + currentWordWidth) < contentWidth))
