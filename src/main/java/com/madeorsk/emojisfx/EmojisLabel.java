@@ -15,7 +15,6 @@ import javafx.beans.property.DoubleProperty;
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
-import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.beans.value.WritableValue;
 import javafx.css.CssMetaData;
@@ -36,7 +35,7 @@ import javafx.scene.text.TextAlignment;
 
 public class EmojisLabel extends Control
 {
-  protected static final String DEFAULT_EMOJIS_LOCATION = "/emojis/";
+  protected static final String DEFAULT_EMOJIS_LOCATION = "/openmoji/";
   private List<Range> linkRanges = new ArrayList<Range>();
 
   public EmojisLabel()

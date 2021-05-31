@@ -502,7 +502,7 @@ public class EmojisLabelSkin extends BehaviorSkinBase<EmojisLabel, EmojisLabelBe
       {
         line.autosize();
         usedWidth = line.getBoundsInParent().getWidth();
-        InputStream is = this.getClass().getResourceAsStream(this.getSkinnable().getEmojisLocation() + charByteArrayToUnicode(charByteArray) + ".SVG");
+        InputStream is = this.getClass().getResourceAsStream(this.getSkinnable().getEmojisLocation() + charByteArrayToUnicode(charByteArray) + ".svg");
         if (is == null || forceText)
         {
           try
@@ -707,7 +707,7 @@ public class EmojisLabelSkin extends BehaviorSkinBase<EmojisLabel, EmojisLabelBe
 
       try
       {
-        SVGDiagram diagram = SVGCache.getSVGUniverse().getDiagram(SVGCache.getSVGUniverse().loadSVG(this.getClass().getResourceAsStream(EmojisLabelSkin.this.getSkinnable().getEmojisLocation() + this.emojiUnicode + ".SVG"), this.emojiUnicode));
+        SVGDiagram diagram = SVGCache.getSVGUniverse().getDiagram(SVGCache.getSVGUniverse().loadSVG(this.getClass().getResourceAsStream(EmojisLabelSkin.this.getSkinnable().getEmojisLocation() + this.emojiUnicode + ".svg"), this.emojiUnicode));
         diagram.setIgnoringClipHeuristic(true);
         ChangeListener<Number> changeListener = new ChangeListener<Number>()
         {
