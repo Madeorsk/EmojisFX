@@ -4,7 +4,7 @@ Beautiful emojis support for JavaFX 8.
 
 ![Simple example](./example.png)
 
-Default emojis: [EmojiOne 2.2.7](https://github.com/emojione/emojione/tree/2.2.7).
+Default emojis: [Open Moji 13.0](https://github.com/hfg-gmuend/openmoji/tree/13.0.0).
 
 ## TODO
 
